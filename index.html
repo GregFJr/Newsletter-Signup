@@ -20,7 +20,7 @@
 <body>
 
   <!-- Sign-up form start -->
-<section class="main">
+<section class="main" id="main">
 <form action="" class="sign-up" id="form">
   <h1>Stay updated!</h1>
 
@@ -33,7 +33,7 @@
 </ul>
 
   <label for="email">Email address:</label>
-  <input type="email" name="email" placeholder="  email@company.com">
+  <input type="email" name="email" id="email" placeholder="  email@company.com">
   <button type="submit" id="subform">Subscribe to monthly newsletter</button>
 </form>
 
@@ -48,19 +48,22 @@
 
   <!-- Success message start -->
 <section class="success-mess" id="success">
-  Thanks for subscribing!
+  <div class="success-cont">
+  <img src="./assets/images/icon-list.svg" alt="">
+  <h1>Thanks for <br> subscribing!</h1>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+  <p> A confirmation email has been sent to <br> <span id="emailName"></span>.
+  Please open it and click <br>the button inside to confirm your subscription.</p>
 
-  Dismiss message
+  <button id="dismiss">Dismiss message</button>
 </section>
+</div>
 
   <!-- Success message end -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Gregory Finney</a>.
   </div>
 
   <script src="./script.js"></script>

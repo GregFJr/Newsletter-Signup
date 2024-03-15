@@ -78,7 +78,56 @@ body {
     box-shadow: 8px 8px 15px 3px hsla(4, 100%, 67%, 0.431);
 }
 
+.attribution {
+    color: var(--White);
+    margin-top: 2%;
+}
 
 .success-mess {
+    display: none !important;
+}
+
+#success {
+    display: flex;
+    justify-content: center;
+    background-color: var(--White);
+    border-radius: 22px;
+    padding: 50px;
+}
+
+.success-cont {
+    display: block;
+} 
+
+#success h1 {
+    line-height: 1.0;
+    font-size: 50px;
+    margin: 0;
+}
+
+#success img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5%;
+}
+
+#dismiss {
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+#dismiss:hover {
+    cursor: pointer;
+    background-color: var(--Tomato);
+    box-shadow: 8px 8px 15px 3px hsla(4, 100%, 67%, 0.431);
+}
+
+/* Classes for JS */
+
+.main-hide {
     display: none;
 }
