@@ -1,0 +1,84 @@
+:root {
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--Tomato: hsl(4, 100%, 67%);
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Charcoal-Grey) ;
+    height: 100vh; 
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main {
+    display: flex;
+    border-radius: 22px;
+    background-color: var(--White);
+    padding: 15px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sign-up h1 {
+    font-size: 58px;
+    margin: 0;
+
+}
+
+.sign-up input {
+    width: 100%;
+    height: 8%;
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    border-radius:  5px;
+    margin: 2% 0 5% 0;
+}
+
+.sign-up ul {
+    list-style-image: url('/assets/images/icon-list.svg');
+    padding-left: 15px;
+}
+
+.sign-up li {
+    padding-bottom: 10px;
+}
+
+.sign-up label {
+    font-weight: 700;
+}
+
+.sign-up button {
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    text-align: center;
+    width: 101%;
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+}
+
+.sign-up button:hover {
+    background-color: var(--Tomato);
+    cursor: pointer;
+    box-shadow: 8px 8px 15px 3px hsla(4, 100%, 67%, 0.431);
+}
+
+
+.success-mess {
+    display: none;
+}

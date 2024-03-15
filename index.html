@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -17,31 +20,41 @@
 <body>
 
   <!-- Sign-up form start -->
-<form action="">
+<section class="main">
+<form action="" class="sign-up" id="form">
   <h1>Stay updated!</h1>
 
-  <p>Join 60,000+ product managers receiving monthly updates on:</p>
+  <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
 
+  <ul>
   <li>Product discovery and building what matters</li>
   <li>Measuring to ensure updates are a success</li>
   <li>And much more!</li>
+</ul>
 
-  Email address
-  <input type="email" placeholder="email@company.com">
+  <label for="email">Email address:</label>
+  <input type="email" name="email" placeholder="  email@company.com">
+  <button type="submit" id="subform">Subscribe to monthly newsletter</button>
 </form>
 
-  Subscribe to monthly newsletter
+
+
+<img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+</section> 
+
+  
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
+<section class="success-mess" id="success">
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
   Dismiss message
+</section>
 
   <!-- Success message end -->
   
@@ -49,5 +62,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
