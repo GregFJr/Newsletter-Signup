@@ -4,6 +4,7 @@ let btn = document.getElementById('subform');
 let disBtn = document.getElementById('dismiss');
 let InputEmail = document.getElementById('email');
 let emailName = document.getElementById('emailName');
+let error = document.getElementById('error-message');
 
 
 
@@ -26,6 +27,10 @@ btn.addEventListener('click', (e) => {
       } else {
         InputEmail.style.border = '1px solid red';
         InputEmail.style.backgroundColor = 'rgba(255, 0, 0, 0.3)';
+        error.classList.remove('error-message');
+        error.style.color = 'red';
+        error.style.fontSize = '12px';
+        error.style.alignSelf = 'flex-end';
        }
 });
 

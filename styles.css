@@ -27,6 +27,11 @@ body {
     padding: 15px;
 }
 
+.main figure {
+    margin: 0;
+    padding: 0;
+}
+
 .sign-up {
     display: flex;
     justify-content: center;
@@ -58,8 +63,9 @@ body {
     padding-bottom: 10px;
 }
 
-.sign-up label {
+.error-handle {
     font-weight: 700;
+    align-self: flex-start;
 }
 
 .sign-up button {
@@ -126,8 +132,54 @@ body {
     box-shadow: 8px 8px 15px 3px hsla(4, 100%, 67%, 0.431);
 }
 
+.error-message {
+    display: none;
+}
+
 /* Classes for JS */
 
 .main-hide {
     display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+   .main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+   }
+
+   figure img {
+    width: 100%;
+    height: 100%;
+   }
+
+   
+   .sign-up h1{
+    font-size: 40px;
+    align-self: flex-start;
+   }
+
+   .sign-up button {
+    width: 100%;
+    height: 60px;
+   }
+
+   .sign-up input {
+    width: 100%;
+    height: 56px;
+   }
+
+   .main-hide {
+    display: none;
+}
+
+#success {
+    height: 100%;
+    width: 100%;
+}
+
 }
